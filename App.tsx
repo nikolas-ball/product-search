@@ -1,11 +1,23 @@
 import React from "react";
 import { View } from "react-native";
 import Home from "./screens/Home";
-import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  ApolloLink,
+} from "@apollo/client";
 
-// Initialize Apollo Client pointing to Mavely API
 const client = new ApolloClient({
-  uri: "https://mavely.top/",
+  // request: (operation) => {
+  //   const token = "";
+  //   operation.setContext({
+  //     headers: {
+  //       authorization: token ? `Bearer ${token}` : "",
+  //     },
+  //   });
+  // },
+  uri: "",
   cache: new InMemoryCache(),
 });
 
