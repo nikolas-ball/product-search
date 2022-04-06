@@ -19,11 +19,10 @@ const Home = () => {
   const [clicked, setClicked] = useState(false);
   const [fakeData, setFakeData] = useState();
 
-  // get data from the fake api
+  // get data from the api
   useEffect(() => {
     // const getData = async () => {
     //   const apiResponse = await fetch(
-    //     "https://my-json-server.typicode.com/kevintomas1995/logRocket_searchBar/languages"
     //   );
     //   const data = await apiResponse.json();
     //   setFakeData(data);
